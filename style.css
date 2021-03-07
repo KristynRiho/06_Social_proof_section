@@ -9,14 +9,132 @@ html {
   padding-left: 0;
 }
 
-body {
-  background: url(images/bg-pattern-top-desktop.svg),
-    url(images/bg-pattern-bottom-desktop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+:root {
+  --purple-dark: hsl(300, 43%, 22%);
+  --pink-soft: hsl(333, 80%, 67%);
+  --gray-dark: hsl(303, 10%, 53%);
+  --gray-soft: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
 }
 
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+
+  background-image: url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/**** HEADER  */
+header {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  background-image: url(images/bg-pattern-top-desktop.svg);
+  background-position: -5% -5%;
+  background-repeat: no-repeat;
+}
+.header__flexItem {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  padding: 8%;
+}
+
+.header__flexItem h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--purple-dark);
+  margin-bottom: 2%;
+}
+
+.header__flexItem p {
+  color: var(--gray-dark);
+  line-height: 1.5;
+}
+
+/* SECTION - RATINGS */
+.header__flexItem ul li {
+  width: 100%;
+  font-weight: 700;
+  color: var(--purple-dark);
+  background-color: var(--gray-soft);
+  border-radius: 10px;
+  list-style-type: none;
+  padding: 4% 5%;
+  margin: 5% 0;
+}
+
+.ratings img {
+  margin: 0 1px;
+}
+
+.ratings__text {
+  margin-left: 5%;
+}
+
+.ratings__one {
+  transform: translateX(-20%);
+}
+
+.ratings__two {
+  transform: translateX(-10%);
+}
+
+/**** MAIN  */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 8%;
+}
+
+.main__flexItem {
+  flex-basis: 32%;
+  padding: 3%;
+  background-color: var(--purple-dark);
+  border-radius: 5px;
+}
+
+main p {
+  color: var(--white);
+  line-height: 1.4;
+}
+
+.person--name h2 {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.person--name h3 {
+  color: var(--pink-soft);
+  font-size: 16px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.person--hero {
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+.main--one {
+  transform: translateY(-20%);
+}
+
+.main--two {
+  transform: translateY(-10%);
+}
+
+/**** FOOTER  */
+footer {
+  margin-top: 1%;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
