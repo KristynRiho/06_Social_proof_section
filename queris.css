@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1220px) {
+  .ratings__one {
+    transform: translateX(-30%);
+  }
+
+  .ratings__two {
+    transform: translateX(-20%);
+  }
+  .ratings__three {
+    transform: translateX(-10%);
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1174px) {
+  .header__flexItem h1 {
+    font-size: 36px;
+    margin-bottom: 2%;
+  }
+  .header__flexItem ul li {
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .person--name h2 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .person--name h3 {
+    font-size: 14px;
+  }
+  .header__flexItem ul li {
+    width: 130%;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .header {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+  .header__flexItem {
+    flex: 1 0 100%;
+  }
+
+  .header__flexItem h1 {
+    color: red;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .main__flexItem {
+    flex: 1 0 100%;
+  }
+}
